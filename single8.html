@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bloggy - Personal Blog Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/hoangphuoc.jpg" alt="Image">
+                <h1 class="font-weight-bold">Nguyễn Hoàng Phước</h1>
+                <p class="mb-4">
+                    Đoạn mã là nghệ thuật, việc gỡ lỗi là kiệt tác.
+                </p>
+                <div class="d-flex justify-content-center mb-5">
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="" class="btn btn-lg btn-block btn-primary mt-auto">Hire Me</a>
+            </div>
+            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+            </div>
+        </div>
+        <div class="content">
+            <!-- Navbar Start -->
+            <div class="container p-0">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar End -->
+
+            <!-- Page Header Start -->
+            <div class="container py-5 px-2 bg-primary">
+                <div class="row py-5 px-4">
+                    <div class="col-sm-6 text-center text-md-left">
+                        <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Blog Detail</h1>
+                    </div>
+                    <div class="col-sm-6 text-center text-md-right">
+                        <div class="d-inline-flex pt-2">
+                            <h4 class="m-0 text-white"><a class="text-white" href="">Home</a></h4>
+                            <h4 class="m-0 text-white px-2">/</h4>
+                            <h4 class="m-0 text-white">Blog Detail</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- Blog Detail Start -->
+            <div class="container py-5 px-2 bg-white">
+                <div class="container">
+                    <header>
+                        <h1>ES6 trong JavaScript: Các tính năng mới và cách áp dụng vào dự án</h1>
+                        <p class="author">Được viết bởi: [Tên tác giả]</p>
+                        <p class="date">Ngày đăng: [Ngày]</p>
+                    </header>
+            
+                    <section class="intro">
+                        <h2>Giới thiệu về ES6</h2>
+                        <p>
+                            ES6 (ECMAScript 2015) là phiên bản nâng cấp của JavaScript, mang đến rất nhiều tính năng mới giúp cải thiện khả năng viết mã, dễ dàng bảo trì và tối ưu hiệu suất trong phát triển phần mềm. Trong bài viết này, chúng ta sẽ tìm hiểu một số tính năng nổi bật của ES6 và cách áp dụng chúng vào các dự án JavaScript.
+                        </p>
+                    </section>
+            
+                    <section class="let-const">
+                        <h2>1. Let và Const</h2>
+                        <p>
+                            Trước ES6, chúng ta chỉ có thể sử dụng <strong>var</strong> để khai báo biến. Tuy nhiên, <strong>let</strong> và <strong>const</strong> trong ES6 đã giải quyết những vấn đề của <strong>var</strong> như phạm vi biến và khả năng tái khai báo.
+                        </p>
+                        <h3>Ví dụ sử dụng let và const:</h3>
+                        <pre>
+                            <code>
+            let name = "John";
+            name = "Alice"; // Được phép thay đổi giá trị
+            
+            const age = 30;
+            age = 35; // Lỗi: Không thể thay đổi giá trị của const
+                            </code>
+                        </pre>
+                        <p>
+                            <strong>let</strong> cho phép khai báo biến có thể thay đổi giá trị, trong khi <strong>const</strong> dùng để khai báo hằng số mà không thể thay đổi giá trị sau khi đã được gán.
+                        </p>
+                    </section>
+            
+                    <section class="arrow-functions">
+                        <h2>2. Hàm mũi tên (Arrow Functions)</h2>
+                        <p>
+                            Một trong những tính năng tuyệt vời của ES6 là hàm mũi tên, giúp viết hàm ngắn gọn và dễ hiểu hơn, đồng thời cải thiện khả năng làm việc với this.
+                        </p>
+                        <h3>Ví dụ về hàm mũi tên:</h3>
+                        <pre>
+                            <code>
+            const greet = (name) => {
+                return "Chào " + name;
+            };
+            
+            console.log(greet("Alice")); // In ra: Chào Alice
+                            </code>
+                        </pre>
+                        <p>
+                            Hàm mũi tên giúp loại bỏ từ khóa <strong>function</strong> và tự động giữ giá trị của <strong>this</strong> từ phạm vi bên ngoài.
+                        </p>
+                    </section>
+            
+                    <section class="template-literals">
+                        <h2>3. Template Literals</h2>
+                        <p>
+                            Template literals trong ES6 cho phép bạn chèn giá trị vào chuỗi mà không cần phải sử dụng dấu cộng. Điều này giúp mã nguồn trở nên dễ đọc hơn.
+                        </p>
+                        <h3>Ví dụ về template literals:</h3>
+                        <pre>
+                            <code>
+            const name = "Alice";
+            const age = 25;
+            const message = `Chào ${name}, bạn ${age} tuổi.`;
+            console.log(message); // In ra: Chào Alice, bạn 25 tuổi.
+                            </code>
+                        </pre>
+                        <p>
+                            Dấu <strong>\`\`</strong> được sử dụng để tạo template literals và bạn có thể dễ dàng chèn biến hoặc biểu thức vào chuỗi bằng cách sử dụng <strong>${}</strong>.
+                        </p>
+                    </section>
+            
+                    <section class="destructuring">
+                        <h2>4. Destructuring Assignment</h2>
+                        <p>
+                            Destructuring là một tính năng của ES6 cho phép bạn "phân tách" các giá trị từ mảng hoặc đối tượng và gán chúng vào các biến riêng biệt một cách dễ dàng.
+                        </p>
+                        <h3>Ví dụ về destructuring với mảng:</h3>
+                        <pre>
+                            <code>
+            const arr = [10, 20, 30];
+            const [a, b] = arr;
+            console.log(a); // In ra: 10
+            console.log(b); // In ra: 20
+                            </code>
+                        </pre>
+                        <h3>Ví dụ về destructuring với đối tượng:</h3>
+                        <pre>
+                            <code>
+            const person = { name: "Alice", age: 25 };
+            const { name, age } = person;
+            console.log(name); // In ra: Alice
+            console.log(age);  // In ra: 25
+                            </code>
+                        </pre>
+                        <p>
+                            Destructuring giúp giảm bớt mã nguồn lặp lại và làm mã trở nên ngắn gọn, dễ hiểu hơn.
+                        </p>
+                    </section>
+            
+                    <section class="classes">
+                        <h2>5. Lớp (Classes)</h2>
+                        <p>
+                            ES6 đã giới thiệu cú pháp <strong>class</strong> giúp việc định nghĩa và kế thừa các lớp đối tượng trong JavaScript trở nên dễ dàng hơn và giống với các ngôn ngữ lập trình hướng đối tượng khác.
+                        </p>
+                        <h3>Ví dụ về lớp trong JavaScript:</h3>
+                        <pre>
+                            <code>
+            class Person {
+                constructor(name, age) {
+                    this.name = name;
+                    this.age = age;
+                }
+            
+                greet() {
+                    console.log(`Chào ${this.name}, bạn ${this.age} tuổi.`);
+                }
+            }
+            
+            const person1 = new Person("Alice", 25);
+            person1.greet(); // In ra: Chào Alice, bạn 25 tuổi.
+                            </code>
+                        </pre>
+                        <p>
+                            Với ES6, cú pháp tạo lớp và phương thức trong lớp trở nên rõ ràng và dễ sử dụng, giúp lập trình viên dễ dàng quản lý đối tượng trong ứng dụng.
+                        </p>
+                    </section>
+            
+                    <section class="modules">
+                        <h2>6. Modules</h2>
+                        <p>
+                            ES6 hỗ trợ cú pháp module, cho phép tách các đoạn mã thành các tệp riêng biệt và dễ dàng tái sử dụng trong dự án. Điều này giúp quản lý mã nguồn dễ dàng hơn, đặc biệt khi làm việc với các dự án lớn.
+                        </p>
+                        <h3>Ví dụ về module trong ES6:</h3>
+                        <p><strong>module1.js</strong>:</p>
+                        <pre>
+                            <code>
+            // Định nghĩa một hàm trong module1.js
+            export function greet(name) {
+                return `Chào ${name}`;
+            }
+                            </code>
+                        </pre>
+                        <p><strong>app.js</strong>:</p>
+                        <pre>
+                            <code>
+            // Import hàm từ module1.js
+            import { greet } from './module1.js';
+            
+            console.log(greet("Alice")); // In ra: Chào Alice
+                            </code>
+                        </pre>
+                        <p>
+                            Các module giúp tổ chức và bảo trì mã nguồn tốt hơn bằng cách chia nhỏ mã thành các phần độc lập.
+                        </p>
+                    </section>
+            
+                    <section class="conclusion">
+                        <h2>Kết luận</h2>
+                        <p>
+                            ES6 mang đến nhiều tính năng mạnh mẽ giúp cải thiện trải nghiệm lập trình JavaScript. Các tính năng như <strong>let</strong>, <strong>const</strong>, <strong>arrow functions</strong>, <strong>template literals</strong>, <strong>destructuring</strong>, <strong>classes</strong> và <strong>modules</strong> đã thay đổi cách chúng ta viết mã, giúp mã nguồn trở nên dễ đọc, dễ bảo trì và tối ưu hơn. Áp dụng những tính năng này vào dự án sẽ giúp bạn viết mã hiệu quả và hiện đại hơn.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- Blog Detail End -->
+                
+            <!-- Footer Start -->
+            <div class="container py-4 bg-secondary text-center">
+                <p class="m-0 text-white">
+                        &copy; <a class="text-white font-weight-bold" href="#">Nguyễn Hoàng Phước</a>.  Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">Nguyễn Hoàng Phước</a>                </p>
+            </div>
+            <!-- Footer End -->
+        </div>
+    </div>
+        
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

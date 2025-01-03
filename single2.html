@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bloggy - Personal Blog Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/hoangphuoc.jpg" alt="Image">
+                <h1 class="font-weight-bold">Nguyễn Hoàng Phước</h1>
+                <p class="mb-4">
+                    Đoạn mã là nghệ thuật, việc gỡ lỗi là kiệt tác.
+                </p>
+                <div class="d-flex justify-content-center mb-5">
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="" class="btn btn-lg btn-block btn-primary mt-auto">Hire Me</a>
+            </div>
+            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+            </div>
+        </div>
+        <div class="content">
+            <!-- Navbar Start -->
+            <div class="container p-0">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar End -->
+
+            <!-- Page Header Start -->
+            <div class="container py-5 px-2 bg-primary">
+                <div class="row py-5 px-4">
+                    <div class="col-sm-6 text-center text-md-left">
+                        <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Blog Detail</h1>
+                    </div>
+                    <div class="col-sm-6 text-center text-md-right">
+                        <div class="d-inline-flex pt-2">
+                            <h4 class="m-0 text-white"><a class="text-white" href="">Home</a></h4>
+                            <h4 class="m-0 text-white px-2">/</h4>
+                            <h4 class="m-0 text-white">Blog Detail</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- Blog Detail Start -->
+            <div class="container py-5 px-2 bg-white">
+                <div class="container">
+                    <header>
+                        <h1>Sử dụng Java Collections Framework: Từ lý thuyết đến thực hành</h1>
+                        <p class="author">Được viết bởi: [Tên tác giả]</p>
+                        <p class="date">Ngày đăng: [Ngày]</p>
+                    </header>
+            
+                    <section class="intro">
+                        <h2>Giới thiệu về Java Collections Framework</h2>
+                        <p>
+                            Java Collections Framework (JCF) là một bộ các lớp và giao diện trong Java, cung cấp các cấu trúc dữ liệu hữu ích để lưu trữ và xử lý các đối tượng trong ứng dụng của bạn. Từ các danh sách (List), bộ sưu tập (Set), bản đồ (Map) cho đến các hàng đợi (Queue), JCF hỗ trợ nhiều kiểu cấu trúc dữ liệu khác nhau, giúp lập trình viên dễ dàng quản lý và thao tác với dữ liệu.
+                        </p>
+                        <p>
+                            Trong bài viết này, chúng ta sẽ cùng tìm hiểu lý thuyết về các loại collections trong Java, sau đó sẽ đi vào các ví dụ thực tế về cách sử dụng chúng trong các ứng dụng Java.
+                        </p>
+                    </section>
+            
+                    <section class="collections-types">
+                        <h2>Các loại Collections trong Java</h2>
+                        <p>
+                            Java Collections Framework cung cấp ba loại chính của collections: 
+                            <ul>
+                                <li><strong>List</strong>: Lưu trữ các phần tử theo thứ tự và cho phép trùng lặp.</li>
+                                <li><strong>Set</strong>: Lưu trữ các phần tử không trùng lặp.</li>
+                                <li><strong>Map</strong>: Lưu trữ cặp khóa-giá trị.</li>
+                                <li><strong>Queue</strong>: Quản lý hàng đợi của các phần tử, thường được sử dụng trong các bài toán xử lý theo thứ tự (FIFO).</li>
+                            </ul>
+                        </p>
+                    </section>
+            
+                    <section class="list-example">
+                        <h2>1. Sử dụng List trong Java</h2>
+                        <p>
+                            <strong>List</strong> là một trong những collection phổ biến nhất trong Java. Một <code>List</code> lưu trữ các phần tử theo thứ tự và cho phép trùng lặp. Dưới đây là ví dụ về cách sử dụng <code>ArrayList</code>, một loại <code>List</code> phổ biến:
+                        </p>
+                        <pre>
+                            <code>
+            import java.util.ArrayList;
+            
+            public class ListExample {
+                public static void main(String[] args) {
+                    ArrayList<String> fruits = new ArrayList<>();
+                    fruits.add("Táo");
+                    fruits.add("Chuối");
+                    fruits.add("Cam");
+                    fruits.add("Táo");
+            
+                    // In ra danh sách
+                    for (String fruit : fruits) {
+                        System.out.println(fruit);
+                    }
+                }
+            }
+                            </code>
+                        </pre>
+                        <p>
+                            Trong ví dụ này, chúng ta sử dụng <strong>ArrayList</strong> để lưu trữ các loại trái cây. Bạn có thể thấy rằng ArrayList cho phép các phần tử trùng lặp, như trong trường hợp của "Táo" xuất hiện hai lần.
+                        </p>
+                    </section>
+            
+                    <section class="set-example">
+                        <h2>2. Sử dụng Set trong Java</h2>
+                        <p>
+                            <strong>Set</strong> là một collection không cho phép các phần tử trùng lặp. Ví dụ, khi thêm phần tử trùng lặp vào một <code>HashSet</code>, phần tử đó sẽ không được thêm vào. Dưới đây là ví dụ về cách sử dụng <code>HashSet</code>:
+                        </p>
+                        <pre>
+                            <code>
+            import java.util.HashSet;
+            
+            public class SetExample {
+                public static void main(String[] args) {
+                    HashSet<String> fruits = new HashSet<>();
+                    fruits.add("Táo");
+                    fruits.add("Chuối");
+                    fruits.add("Cam");
+                    fruits.add("Táo");  // Phần tử trùng lặp sẽ không được thêm vào
+            
+                    // In ra danh sách
+                    for (String fruit : fruits) {
+                        System.out.println(fruit);
+                    }
+                }
+            }
+                            </code>
+                        </pre>
+                        <p>
+                            Trong ví dụ này, chúng ta sử dụng <strong>HashSet</strong> để lưu trữ các loại trái cây. Mặc dù "Táo" được thêm hai lần, nhưng trong <strong>HashSet</strong>, chỉ có một "Táo" được giữ lại.
+                        </p>
+                    </section>
+            
+                    <section class="map-example">
+                        <h2>3. Sử dụng Map trong Java</h2>
+                        <p>
+                            <strong>Map</strong> là một collection lưu trữ các cặp khóa-giá trị. Mỗi khóa phải là duy nhất, nhưng giá trị có thể trùng lặp. Dưới đây là ví dụ về cách sử dụng <code>HashMap</code>:
+                        </p>
+                        <pre>
+                            <code>
+            import java.util.HashMap;
+            
+            public class MapExample {
+                public static void main(String[] args) {
+                    HashMap<String, Integer> ageMap = new HashMap<>();
+                    ageMap.put("John", 25);
+                    ageMap.put("Jane", 30);
+                    ageMap.put("Alex", 22);
+            
+                    // In ra các cặp khóa-giá trị
+                    for (String name : ageMap.keySet()) {
+                        System.out.println(name + ": " + ageMap.get(name));
+                    }
+                }
+            }
+                            </code>
+                        </pre>
+                        <p>
+                            Trong ví dụ này, chúng ta sử dụng <strong>HashMap</strong> để lưu trữ tuổi của các người. Mỗi người (khóa) được liên kết với một giá trị tuổi (giá trị). Bạn có thể thấy cách lấy giá trị từ Map thông qua khóa.
+                        </p>
+                    </section>
+            
+                    <section class="queue-example">
+                        <h2>4. Sử dụng Queue trong Java</h2>
+                        <p>
+                            <strong>Queue</strong> là một collection đặc biệt, thường được sử dụng trong các hệ thống yêu cầu xử lý theo thứ tự. Các phần tử trong Queue thường được xử lý theo quy tắc FIFO (First-In-First-Out). Dưới đây là ví dụ về cách sử dụng <code>LinkedList</code> làm Queue:
+                        </p>
+                        <pre>
+                            <code>
+            import java.util.LinkedList;
+            import java.util.Queue;
+            
+            public class QueueExample {
+                public static void main(String[] args) {
+                    Queue<String> queue = new LinkedList<>();
+                    queue.add("John");
+                    queue.add("Jane");
+                    queue.add("Alex");
+            
+                    // Xử lý các phần tử trong hàng đợi theo FIFO
+                    while (!queue.isEmpty()) {
+                        System.out.println("Xử lý: " + queue.poll());
+                    }
+                }
+            }
+                            </code>
+                        </pre>
+                        <p>
+                            Trong ví dụ này, chúng ta sử dụng <strong>LinkedList</strong> để làm hàng đợi. Các phần tử được xử lý theo thứ tự mà chúng được thêm vào (FIFO).
+                        </p>
+                    </section>
+            
+                    <section class="conclusion">
+                        <h2>Kết luận</h2>
+                        <p>
+                            Java Collections Framework là một công cụ mạnh mẽ và cần thiết khi lập trình với Java. Với các loại collection như <code>List</code>, <code>Set</code>, <code>Map</code>, và <code>Queue</code>, bạn có thể dễ dàng xử lý các tập hợp dữ liệu trong các ứng dụng của mình. Việc hiểu rõ và sử dụng thành thạo các collections sẽ giúp bạn viết mã hiệu quả hơn, giảm thiểu sự phức tạp và tối ưu hóa hiệu suất của chương trình.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- Blog Detail End -->
+                
+            <!-- Footer Start -->
+            <div class="container py-4 bg-secondary text-center">
+                <p class="m-0 text-white">
+                        &copy; <a class="text-white font-weight-bold" href="#">Nguyễn Hoàng Phước</a>.  Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">Nguyễn Hoàng Phước</a>                </p>
+            </div>
+            <!-- Footer End -->
+        </div>
+    </div>
+        
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

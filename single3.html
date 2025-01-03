@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bloggy - Personal Blog Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/hoangphuoc.jpg" alt="Image">
+                <h1 class="font-weight-bold">Nguyễn Hoàng Phước</h1>
+                <p class="mb-4">
+                    Đoạn mã là nghệ thuật, việc gỡ lỗi là kiệt tác.
+                </p>
+                <div class="d-flex justify-content-center mb-5">
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="" class="btn btn-lg btn-block btn-primary mt-auto">Hire Me</a>
+            </div>
+            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+            </div>
+        </div>
+        <div class="content">
+            <!-- Navbar Start -->
+            <div class="container p-0">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar End -->
+
+            <!-- Page Header Start -->
+            <div class="container py-5 px-2 bg-primary">
+                <div class="row py-5 px-4">
+                    <div class="col-sm-6 text-center text-md-left">
+                        <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Blog Detail</h1>
+                    </div>
+                    <div class="col-sm-6 text-center text-md-right">
+                        <div class="d-inline-flex pt-2">
+                            <h4 class="m-0 text-white"><a class="text-white" href="">Home</a></h4>
+                            <h4 class="m-0 text-white px-2">/</h4>
+                            <h4 class="m-0 text-white">Blog Detail</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- Blog Detail Start -->
+            <div class="container py-5 px-2 bg-white">
+                <div class="container">
+                    <header>
+                        <h1>Quản lý bộ nhớ trong Java: Garbage Collection và cách tối ưu hóa</h1>
+                        <p class="author">Được viết bởi: [Tên tác giả]</p>
+                        <p class="date">Ngày đăng: [Ngày]</p>
+                    </header>
+            
+                    <section class="intro">
+                        <h2>Giới thiệu về Quản lý bộ nhớ trong Java</h2>
+                        <p>
+                            Quản lý bộ nhớ là một trong những khía cạnh quan trọng trong phát triển phần mềm. Trong Java, việc quản lý bộ nhớ được thực hiện tự động nhờ vào cơ chế Garbage Collection (GC). Cơ chế này giúp giải phóng bộ nhớ không còn sử dụng, từ đó giảm thiểu nguy cơ rò rỉ bộ nhớ và cải thiện hiệu suất của chương trình. Tuy nhiên, nếu không hiểu rõ cách Garbage Collection hoạt động và không tối ưu hóa được quy trình này, bạn có thể gặp phải các vấn đề về hiệu suất và bộ nhớ trong các ứng dụng Java.
+                        </p>
+                    </section>
+            
+                    <section class="garbage-collection">
+                        <h2>Garbage Collection là gì?</h2>
+                        <p>
+                            Garbage Collection (GC) trong Java là quá trình tự động giải phóng bộ nhớ của các đối tượng không còn được tham chiếu trong chương trình. Nó giúp giảm thiểu rủi ro về bộ nhớ và giúp lập trình viên không cần phải quản lý bộ nhớ thủ công. Java sử dụng bộ thu gom rác để xác định những đối tượng không còn được sử dụng và giải phóng bộ nhớ của chúng.
+                        </p>
+            
+                        <p>
+                            Các thuật toán Garbage Collection trong Java thường được thực hiện bởi <strong>Garbage Collector</strong> (GC). Các đối tượng trong Java sẽ được lưu trong heap memory, và khi chúng không còn tham chiếu đến bất kỳ phần nào trong chương trình, GC sẽ đánh dấu và thu hồi bộ nhớ của chúng.
+                        </p>
+            
+                        <h3>Quá trình Garbage Collection</h3>
+                        <p>
+                            Quá trình Garbage Collection có thể được chia thành ba giai đoạn chính:
+                            <ul>
+                                <li><strong>Marking</strong>: GC sẽ đánh dấu các đối tượng mà vẫn còn tham chiếu đến, tức là những đối tượng vẫn đang được sử dụng trong chương trình.</li>
+                                <li><strong>Normal Deletion</strong>: GC sẽ xóa các đối tượng không còn tham chiếu, giải phóng bộ nhớ của chúng.</li>
+                                <li><strong>Compact</strong>: Sau khi xóa các đối tượng không cần thiết, GC sẽ thực hiện thao tác gom lại các vùng bộ nhớ trống, giúp tối ưu hóa bộ nhớ sử dụng.
+                            </ul>
+                        </p>
+                    </section>
+            
+                    <section class="example-gc">
+                        <h2>Ví dụ về Garbage Collection trong Java</h2>
+                        <p>
+                            Hãy cùng xem ví dụ dưới đây để hiểu rõ hơn về cách Garbage Collection hoạt động trong Java:
+                        </p>
+                        <pre>
+                            <code>
+            public class GarbageCollectionExample {
+                public static void main(String[] args) {
+                    // Tạo một đối tượng mới
+                    MyObject obj1 = new MyObject("Đối tượng 1");
+                    
+                    // Tạo thêm một đối tượng mới và gán cho obj1
+                    obj1 = new MyObject("Đối tượng 2");
+                    
+                    // Sau khi obj1 được gán lại, đối tượng cũ sẽ không còn tham chiếu và sẽ được thu gom
+                    System.gc(); // Yêu cầu JVM thực hiện GC (Dù không bắt buộc, đây chỉ là gợi ý)
+                }
+            }
+            
+            class MyObject {
+                String name;
+                
+                MyObject(String name) {
+                    this.name = name;
+                    System.out.println("Đối tượng '" + name + "' đã được tạo.");
+                }
+                
+                @Override
+                protected void finalize() throws Throwable {
+                    super.finalize();
+                    System.out.println("Đối tượng '" + name + "' đã được thu gom.");
+                }
+            }
+                            </code>
+                        </pre>
+                        <p>
+                            Trong ví dụ này, chúng ta tạo hai đối tượng <strong>MyObject</strong>. Sau khi đối tượng đầu tiên bị gán lại cho <strong>obj1</strong>, đối tượng cũ không còn tham chiếu nào nữa và sẽ được Garbage Collector thu gom. Phương thức <strong>finalize()</strong> sẽ được gọi khi đối tượng chuẩn bị bị thu gom.
+                        </p>
+                    </section>
+            
+                    <section class="optimizing-gc">
+                        <h2>Cách tối ưu hóa Garbage Collection</h2>
+                        <p>
+                            Mặc dù Garbage Collection giúp tự động quản lý bộ nhớ, nhưng bạn vẫn có thể tối ưu hóa quy trình này để cải thiện hiệu suất ứng dụng. Dưới đây là một số cách tối ưu hóa:
+                        </p>
+                        <h3>1. Giảm thiểu đối tượng tạm thời</h3>
+                        <p>
+                            Tránh tạo quá nhiều đối tượng tạm thời, đặc biệt là trong các vòng lặp. Việc tạo và hủy đối tượng thường xuyên sẽ làm tăng số lần Garbage Collection, ảnh hưởng đến hiệu suất. Cố gắng tái sử dụng các đối tượng nếu có thể.
+                        </p>
+            
+                        <h3>2. Chọn đúng thuật toán Garbage Collection</h3>
+                        <p>
+                            Java cung cấp nhiều thuật toán Garbage Collection khác nhau như Serial GC, Parallel GC, CMS GC và G1 GC. Mỗi thuật toán có những ưu điểm và hạn chế riêng, vì vậy bạn cần lựa chọn thuật toán phù hợp với loại ứng dụng của mình. Ví dụ, G1 GC có thể phù hợp cho các ứng dụng yêu cầu độ trễ thấp, trong khi Parallel GC lại hiệu quả với ứng dụng yêu cầu hiệu suất cao.
+                        </p>
+            
+                        <h3>3. Kiểm soát bộ nhớ heap</h3>
+                        <p>
+                            Bạn có thể điều chỉnh kích thước bộ nhớ heap thông qua tham số dòng lệnh khi chạy ứng dụng Java. Việc điều chỉnh bộ nhớ heap phù hợp sẽ giúp giảm thiểu số lần thu gom rác và cải thiện hiệu suất. Bạn có thể sử dụng các tham số như <code>-Xms</code> để thiết lập kích thước bộ nhớ heap ban đầu và <code>-Xmx</code> để thiết lập kích thước tối đa của bộ nhớ heap.
+                        </p>
+            
+                        <h3>4. Sử dụng Weak References</h3>
+                        <p>
+                            Nếu bạn cần một đối tượng có thể bị Garbage Collector thu gom khi không còn sử dụng, bạn có thể sử dụng <strong>WeakReference</strong> để thay thế cho các tham chiếu thông thường. WeakReference giúp đảm bảo rằng đối tượng sẽ bị thu gom khi không còn tham chiếu mạnh nào.
+                        </p>
+                    </section>
+            
+                    <section class="conclusion">
+                        <h2>Kết luận</h2>
+                        <p>
+                            Quản lý bộ nhớ trong Java thông qua Garbage Collection là một cơ chế mạnh mẽ giúp lập trình viên tránh phải lo lắng về việc quản lý bộ nhớ thủ công. Tuy nhiên, để đạt được hiệu suất tối ưu, bạn cần hiểu rõ cách Garbage Collection hoạt động và thực hiện các chiến lược tối ưu hóa hợp lý. Hy vọng bài viết này đã giúp bạn có cái nhìn tổng quan về Garbage Collection trong Java và cách tối ưu hóa nó để đạt hiệu suất tốt nhất cho ứng dụng của mình.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <!-- Blog Detail End -->
+                
+            <!-- Footer Start -->
+            <div class="container py-4 bg-secondary text-center">
+                <p class="m-0 text-white">
+                        &copy; <a class="text-white font-weight-bold" href="#">Nguyễn Hoàng Phước</a>.  Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">Nguyễn Hoàng Phước</a>                </p>
+            </div>
+            <!-- Footer End -->
+        </div>
+    </div>
+        
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
